@@ -10,10 +10,15 @@
 .body {
   background-image: url(../imagenes/home1.jpg);
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   display: flex;
   flex-flow: column nowrap;
+  position: relative;
+  min-height: 100vh;
+  padding-bottom: 3rem;
+ 
 }
 
 .desplegador__menu {
@@ -44,11 +49,17 @@
   padding-right: 10px;
 }
 
-/* Footer */
-
 .nav {
   background-color: rgba(0, 0, 0, 0.8);
   border-top: 1px solid #c69b7b;
+}
+
+/* Footer */
+
+.footer__container{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
 .footer__a {
@@ -56,27 +67,27 @@
   transition: 0.5s;
 }
 
-.footer__a:hover{
+.footer__a:hover {
   color: #fff !important;
 }
 
-.footer__icons{
+.footer__icons {
   transition: 0.5s;
 }
 
-.footer__icons:hover{
-  color: #fff ;
+.footer__icons:hover {
+  color: #fff;
 }
 
 .nav-item a {
   color: #c69b7b;
 }
 
-.nav-item span{
+.nav-item span {
   color: #c69b7b;
 }
 
-.footer__responsive{
+.footer__responsive {
   display: none;
 }
 
@@ -84,16 +95,15 @@
 .section {
   display: flex;
   flex-flow: column nowrap;
-  height: 100vh;
   margin-top: 3rem;
 }
 
 .name__container {
   text-align: center;
-  color: #3a3845;
-  opacity: 0.7;
+  color: #000;
+  opacity: 0.9;
   padding: 2.5rem;
-  transition: 2s;
+  transition: 1.5s;
 }
 
 .name {
@@ -111,10 +121,10 @@
 
 .photographer__container {
   text-align: center;
-  color: #3a3845;
-  opacity: 0.7;
+  color: #000;
+  opacity: 0.9;
   padding: 2.5rem;
-  transition: 2s;
+  transition: 1.5s;
 }
 
 .photographer {
@@ -124,7 +134,7 @@
 }
 
 .photographer__container:hover {
-  color: #c69b7b;
+  color: #78938a;
   opacity: 0.8;
 
   cursor: default;
@@ -133,9 +143,9 @@
 .paragraph__container {
   text-align: center;
   padding: 2.5rem;
-  color: #3a3845;
-  opacity: 0.7;
-  transition: 2s;
+  color: #000;
+  opacity: 0.9;
+  transition: 1.5s;
 }
 
 .paragraph {
@@ -144,13 +154,14 @@
 }
 
 .paragraph__container:hover {
-  color: #c69b7b;
-  opacity: 0.8;
+  color: #fff;
+  opacity: 0.9;
   cursor: default;
 }
 
 .paragraph__writter {
-  font-size: 1.3rem;
+  opacity: 0.8;
+
   font-size: 2rem;
   font-style: italic;
   margin-top: 1rem;
@@ -165,27 +176,26 @@
   background-attachment: fixed;
 }
 
-.title--hijo{
+.title--hijo {
   text-align: center;
   padding: 20px;
   font-size: 3.5rem;
   color: rgba(0, 0, 0, 0.8);
 }
 
-.frase--hijo{
+.frase--hijo {
   text-align: center;
   color: rgba(0, 0, 0, 0.8);
 }
 
-.frase--hijo-1{
+.frase--hijo-1 {
   font-size: 1.8rem;
 }
 
-.frase--hijo-2{
+.frase--hijo-2 {
   font-style: italic;
   font-size: 1.3rem;
 }
-
 
 .grid__landscape--padre {
   display: grid;
@@ -198,8 +208,6 @@
     "ele4 ele8 ele5 ele3"
     "ele4 ele6 ele6 ele6";
 }
-
-
 
 .grid__landscape--img {
   width: 100%;
@@ -233,8 +241,6 @@
   grid-area: ele1;
 }
 
-
-
 /* Urban */
 
 .body__urban {
@@ -254,8 +260,7 @@
   grid-template-areas:
     "ele1 ele4 ele3 ele3"
     "ele1 ele5 ele5 ele6"
-    "ele7 ele7 ele8 ele6"
-    ;
+    "ele7 ele7 ele8 ele6";
 }
 
 .img__urban {
@@ -358,13 +363,22 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  position: relative;
+  min-height: 100vh;
+  padding-bottom: 48px;
+  
+}
+
+.footer__container--contacto{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
 .section__contacto {
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
-  height: 100vh;
 }
 
 .form__container {
@@ -377,7 +391,6 @@
   border-radius: 10px;
   background-color: #f1ddbf;
   opacity: 0.8;
-
   width: 500px;
   height: 500px;
   margin: 10rem;
@@ -399,12 +412,12 @@ textarea {
   border-radius: 10px;
 }
 
-.btn-primary{
+.btn-primary {
   background-color: #3a3845 !important;
   border-color: #fff !important;
 }
 
-.btn-primary:focus{
+.btn-primary:focus {
   border-color: #fff !important;
 }
 
@@ -416,12 +429,9 @@ textarea {
 }
 
 @media screen and (max-width: 1023px) {
-  
   /* Index */
 
-  .section {
-    height: 100vh;
-  }
+  
 
   .name {
     font-size: 4.5rem;
@@ -467,27 +477,33 @@ textarea {
     margin: 0;
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas:
-    "ele1 ele1 ele6"
-    "ele4 ele5 ele2"
-    "ele4 ele5 ele2"
-    "ele3 ele7 ele7"
-    "ele3 ele7 ele7"
-    ;
+      "ele1 ele1 ele6"
+      "ele4 ele5 ele2"
+      "ele4 ele5 ele2"
+      "ele3 ele7 ele7"
+      "ele3 ele7 ele7";
   }
 }
 
 @media screen and (max-width: 600px) {
   /* Footer */
 
-  
-
-  
-
   /* Index */
 
-  .body {
+  .body{
+    min-height: 100vh;
+    position: relative;
     background-position: center;
   }
+
+  .footer__container{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+  }
+
+  
 
   .logotipo__container {
     display: none;
@@ -541,8 +557,7 @@ textarea {
       "ele1 ele4"
       "ele1 ele5"
       "ele7 ele6"
-      "ele8 ele6"
-      ;
+      "ele8 ele6";
   }
 
   /* Arquitectura */
@@ -582,4 +597,3 @@ textarea {
 .icons {
   text-decoration: none;
 }
-
