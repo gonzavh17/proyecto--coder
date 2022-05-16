@@ -76,6 +76,10 @@
   color: #c69b7b;
 }
 
+.footer__responsive{
+  display: none;
+}
+
 /* Index */
 .section {
   display: flex;
@@ -86,8 +90,8 @@
 
 .name__container {
   text-align: center;
-  color: #78938a;
-  opacity: 0.8;
+  color: #3a3845;
+  opacity: 0.7;
   padding: 2.5rem;
   transition: 2s;
 }
@@ -107,7 +111,8 @@
 
 .photographer__container {
   text-align: center;
-  color: #78938a;
+  color: #3a3845;
+  opacity: 0.7;
   padding: 2.5rem;
   transition: 2s;
 }
@@ -128,7 +133,8 @@
 .paragraph__container {
   text-align: center;
   padding: 2.5rem;
-  color: #78938a;
+  color: #3a3845;
+  opacity: 0.7;
   transition: 2s;
 }
 
@@ -140,12 +146,13 @@
 .paragraph__container:hover {
   color: #c69b7b;
   opacity: 0.8;
-
   cursor: default;
 }
 
 .paragraph__writter {
   font-size: 1.3rem;
+  font-size: 2rem;
+  font-style: italic;
   margin-top: 1rem;
 }
 
@@ -157,6 +164,28 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
+
+.title--hijo{
+  text-align: center;
+  padding: 20px;
+  font-size: 3.5rem;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.frase--hijo{
+  text-align: center;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.frase--hijo-1{
+  font-size: 1.8rem;
+}
+
+.frase--hijo-2{
+  font-style: italic;
+  font-size: 1.3rem;
+}
+
 
 .grid__landscape--padre {
   display: grid;
@@ -335,7 +364,7 @@
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
-  height: 90vh;
+  height: 100vh;
 }
 
 .form__container {
@@ -391,7 +420,7 @@ textarea {
   /* Index */
 
   .section {
-    height: 90vh;
+    height: 100vh;
   }
 
   .name {
@@ -450,7 +479,9 @@ textarea {
 @media screen and (max-width: 600px) {
   /* Footer */
 
- 
+  
+
+  
 
   /* Index */
 
@@ -463,7 +494,7 @@ textarea {
   }
 
   .section {
-    height: 80vh;
+    height: 100vh;
   }
 
   .name {
@@ -551,3 +582,4 @@ textarea {
 .icons {
   text-decoration: none;
 }
+
