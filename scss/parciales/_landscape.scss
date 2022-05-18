@@ -1,0 +1,71 @@
+.body__landscape {
+  background-image: url(../imagenes/landscao-new-background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  .title--hijo {
+    text-align: center;
+    padding: 20px;
+    font-size: 3.5rem;
+    color: rgba(0, 0, 0, 0.8);
+  }
+
+  .frase--hijo {
+    text-align: center;
+    color: rgba(0, 0, 0, 0.8);
+  }
+
+  .frase--hijo-1 {
+    font-size: 1.8rem;
+  }
+
+  .frase--hijo-2 {
+    font-style: italic;
+    font-size: 1.3rem;
+  }
+}
+
+.grid__landscape--padre {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  grid-auto-rows: 450px;
+  margin: 60px 20px;
+  grid-template-areas:
+    "ele1 ele1 ele2 ele3"
+    "ele4 ele8 ele5 ele3"
+    "ele4 ele6 ele6 ele6";
+
+  .grid__landscape--img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    border: #3a3845 2px solid;
+  }
+
+  .hijo--1 {
+    grid-area: ele3;
+  }
+
+  .hijo--3 {
+    grid-area: ele8;
+  }
+
+  .hijo--4 {
+    grid-area: ele6;
+  }
+
+  .hijo--5 {
+    grid-area: ele5;
+  }
+
+  .hijo--6 {
+    grid-area: ele4;
+  }
+
+  .hijo--7 {
+    grid-area: ele1;
+  }
+}

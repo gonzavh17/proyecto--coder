@@ -1,0 +1,32 @@
+* {
+  font-family: "Cormorant Garamond", serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+.nav__bar {
+  opacity: 0.6;
+  background-color: #fff;
+  border-bottom: 1px solid #3a3845;
+  padding: 10px;
+  font-size: 25px;
+
+  .container-fluid {
+    .logotipo {
+      color: #000;
+      text-decoration: none;
+      font-size: 30px;
+    }
+
+    .navbar-collapse {
+      flex-basis: 100%;
+      flex-grow: 1;
+      align-items: center;
+      justify-content: flex-end;
+      padding-right: 10px;
+    }
+  }
+}
