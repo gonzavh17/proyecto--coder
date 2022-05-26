@@ -1,0 +1,11 @@
+Agregados de seo:
+-Etiquetas de title en cada pagina web
+-Orden jerarquico de las carpetas
+-Creacion del sitemap 
+-Optimizacion de las imagenes de la web general
+-Utilizacion de keyword y description
+
+Agregados de scss:
+-Variable para color
+-Map para color, borde, y background-color para
+-3 mixin con aplicaciones en grid, las imagenes respectivas a cada grid, ybackground de cada pagina y

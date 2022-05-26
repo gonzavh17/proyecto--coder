@@ -1,9 +1,6 @@
 .body {
   background-image: url(../imagenes/home1.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  @include background;
   display: flex;
   flex-flow: column nowrap;
   position: relative;

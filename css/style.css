@@ -183,6 +183,7 @@
 .body__landscape {
   background-image: url(../imagenes/landscao-new-background.jpg);
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
@@ -399,6 +400,7 @@
 .body__contacto {
   background-image: url(../imagenes/home1.jpg);
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   position: relative;
@@ -443,12 +445,14 @@ textarea {
   border-radius: 10px;
 }
 
-.btn-primary {
-  background-color: #3a3845 !important;
-  border-color: #fff !important;
+.button {
+  background-color: #3a3845;
+  border: #fff 3px solid;
+  border-radius: 10px;
+  color: #fff !important;
 }
 
-.btn-primary:focus {
+.btn-primary:target {
   border-color: #fff !important;
 }
 
