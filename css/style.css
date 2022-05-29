@@ -96,6 +96,42 @@
 }
 
 .body {
+  position: relative;
+}
+
+.button-id--container {
+  text-align: center;
+}
+
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.colums--1 {
+  margin: 3rem;
+}
+
+.button-id {
+  padding: 10px 25px;
+  background-color: rgba(255, 255, 255, 0.7);
+  text-align: center;
+  display: inline-block;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-top: 40px;
+  text-decoration: none;
+  color: #000;
+  border-radius: 10px;
+  text-transform: uppercase;
+  transition: 250ms;
+}
+
+.button-id:hover {
+  color: #000;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 #ece5c7;
+}
+
+.section {
   background-image: url(../imagenes/home1.jpg);
   background-size: cover;
   background-position: center;
@@ -103,21 +139,101 @@
   background-attachment: fixed;
   display: flex;
   flex-flow: column nowrap;
-  position: relative;
   min-height: 100vh;
   padding-bottom: 3rem;
 }
 
-.section {
+.section--landscape {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  background-attachment: fixed;
+  background-image: url(../imagenes/section-landscape.jpg);
   display: flex;
-  flex-flow: column nowrap;
-  margin-top: 3rem;
+  flex-direction: row;
+}
+
+.hijo1 {
+  z-index: 10;
+}
+
+.hijo2 {
+  z-index: 100;
+}
+
+.row {
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.section__landscape--container2 {
+  padding: 0;
+  padding-left: 100px;
+}
+
+.col {
+  margin: 0px;
+}
+
+.section--landscape-title {
+  font-size: 5rem;
+  text-align: center;
+}
+
+.section--landscape-paragraph {
+  font-size: 1.5rem;
+}
+
+.section--landscape-paragraph {
+  margin-top: 100px;
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.section--landscape--container1 {
+  margin-top: 100px;
+  padding-left: 0;
+}
+
+.section__landscape--container--hijo {
+  padding: 10px;
+  width: 300px;
+  height: 350px;
+}
+
+.section__landscpae--img {
+  width: 100%;
+  height: 100%;
+}
+
+.section--urban {
+  background-image: url(../imagenes/section-urban.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  background-attachment: fixed;
+  display: flex;
+}
+
+.section--arquitectura {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  background-attachment: fixed;
+  background-image: url(../imagenes/section-arquitectura.jpg);
+  display: flex;
 }
 
 .name__container {
   text-align: center;
   color: #000;
   opacity: 0.9;
+  margin-top: 100px;
   padding: 2.5rem;
   transition: 1.5s;
 }
@@ -474,6 +590,9 @@ textarea {
   .paragraph {
     font-size: 3.5rem;
   }
+  .section--landscape-title {
+    font-size: 3rem;
+  }
   /* Landscape */
   .grid__landscape--padre {
     margin: 0;
@@ -502,6 +621,14 @@ textarea {
     position: relative;
     background-position: center;
   }
+  .col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .colums--1 {
+    margin: 0;
+  }
   .footer__container {
     position: absolute;
     bottom: 0;
@@ -521,6 +648,9 @@ textarea {
   }
   .paragraph {
     font-size: 1.5rem;
+  }
+  .section__landscape--container--hijo--responsive {
+    display: none;
   }
   /* Landscape */
   .body__landscape {

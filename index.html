@@ -6,8 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Gonzalo Andres Asis Fotógrafo</title>
-    <meta name="description" content="Gonzalo Andres Asis fotografo Argentino de paisajes, entornos urbanos, y arquitectura">
-    <meta name="keyword" content="Photographer, Landscape, Paisaje, Urbano, Arquitectura ">
+    <meta
+      name="description"
+      content="Gonzalo Andres Asis fotografo Argentino de paisajes, entornos urbanos, y arquitectura"
+    />
+    <meta
+      name="keyword"
+      content="Photographer, Landscape, Paisaje, Urbano, Arquitectura "
+    />
     <link rel="stylesheet" href="https://unpkg.com/jam-icons/css/jam.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -21,6 +27,7 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body class="body">
     <header class="header">
@@ -83,7 +90,7 @@
     </header>
 
     <main>
-      <section class="section">
+      <section class="section" id="home">
         <div class="name__container">
           <h1 class="name">Gonzalo Andres Asis</h1>
         </div>
@@ -98,13 +105,92 @@
           </p>
           <p class="paragraph__writter">-Robert krank</p>
         </div>
+
+        <div class="row button-id--container">
+          <div>
+            <a href="#sec1" class="button-id">Go down</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section--landscape" id="sec1">
+        <div class="container section--landscape--container1">
+          <div class="row position-relative">
+            <div class="col colums--1  " data-aos="fade-right">
+              <h3 class="section--landscape-title">Landscape</h3>
+              <p class="section--landscape-paragraph "  data-aos="fade-up">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+                eligendi itaque voluptates, aspernatur incidunt iure quibusdam atque
+                iusto omnis obcaecati tempora culpa, magnam aliquid temporibus
+                doloremque dolor quidem possimus harum.
+              </p></div>
+            <div class="col position-relative section__landscape--container2 colums--1"> 
+              <div class="section__landscape--container--hijo hijo1 position-absolute top-50 start-50 translate-middle section__landscape--container--hijo--responsive"  data-aos="fade-up-left" ><img src="../imagenes/polaroid.landscape4.jpg" alt="" class="section__landscpae--img"></div>
+              <div class="section__landscape--container--hijo hijo2"  data-aos="fade-up" ><img src="../imagenes/polaroid-landscape6.jpg" alt="" class="section__landscpae--img"></div>
+              <div class="section__landscape--container--hijo" data-aos="fade-down-right"><img src="../imagenes/polaroid-landscape5.jpg" alt="" class="section__landscpae--img"></div>
+          </div>
+          <div class="row button-id--container">
+            <div>
+              <a href="#sec2" class="button-id">Go down</a>
+            </div>
+          </div>
+        </div>
+      </section>
+     
+
+      <section class="section--urban" id="sec2">
+        <div class="container section--landscape--container1">
+          <div class="row">
+            <div class="col colums--1 ">
+              <h3 class="section--landscape-title" data-aos="fade-down">Urban</h3>
+              <p class="section--landscape-paragraph" data-aos="fade-left">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+                eligendi itaque voluptates, aspernatur incidunt iure quibusdam atque
+                iusto omnis obcaecati tempora culpa, magnam aliquid temporibus
+                doloremque dolor quidem possimus harum.
+              </p></div>
+            <div class="col position-relative section__landscape--container2 colums--1"> 
+              <div class="section__landscape--container--hijo " data-aos="zoom-in-right" ><img src="../imagenes/urban-polaroid.jpg" alt="" class="section__landscpae--img"></div>
+              <div class="section__landscape--container--hijo position-absolute top-50 end-0 translate-middle-y section__landscape--container--hijo--responsive" data-aos="zoom-in-right"><img src="../imagenes/polaroid-urban2.jpg" alt="" class="section__landscpae--img"></div>
+              <div class="section__landscape--container--hijo " data-aos="zoom-in-left"><img src="../imagenes/polaroid-urban3.jpg" alt="" class="section__landscpae--img"></div>
+          </div>
+          <div class="row button-id--container">
+            <div>
+              <a href="#sec3" class="button-id">Go down</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section--arquitectura" id="sec3">
+        <div class="container section--landscape--container1">
+          <div class="row col-md-">
+            <div class="col colums--1 ">
+              <h3 class="section--landscape-title" data-aos="fade-left">Arquitectura</h3>
+              <p class="section--landscape-paragraph" data-aos="fade-right">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+                eligendi itaque voluptates, aspernatur incidunt iure quibusdam atque
+                iusto omnis obcaecati tempora culpa, magnam aliquid temporibus
+                doloremque dolor quidem possimus harum.
+              </p></div>
+              <div class="col position-relative section__landscape--container2 colums--1"> 
+              <div class="section__landscape--container--hijo " data-aos="fade-up-left"><img src="../imagenes/urban-polaroid.jpg" alt="" class="section__landscpae--img"></div>
+              <div class="section__landscape--container--hijo position-absolute top-50 end-0 translate-middle-y section__landscape--container--hijo--responsive" data-aos="fade-down-right"><img src="../imagenes/polaroid-urban2.jpg" alt="" class="section__landscpae--img"></div>
+              <div class="section__landscape--container--hijo " data-aos="fade-down-right"><img src="../imagenes/polaroid-urban3.jpg" alt="" class="section__landscpae--img"></div>
+          </div>
+          <div class="row button-id--container">
+            <div>
+              <a href="#home" class="button-id">Go up</a>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
 
     <footer class="footer footer__container">
       <ul class="nav justify-content-center">
         <li class="nav-item">
-          <span class="jam jam-instagram footer__icons"
+            <span class="jam jam-instagram footer__icons"
             ><a class="nav-link footer__a" aria-current="page" href="#"
               >Instagram</a
             ></span
@@ -139,5 +225,9 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
