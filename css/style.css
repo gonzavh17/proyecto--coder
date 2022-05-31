@@ -19,6 +19,7 @@
   color: #000;
   text-decoration: none;
   font-size: 30px;
+  padding-left: 20px;
 }
 
 .nav__bar .container-fluid .navbar-collapse {
@@ -395,6 +396,10 @@ html, body {
   font-size: 1.3rem;
 }
 
+.title--container {
+  margin: 80px;
+}
+
 .grid__urban--padre {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -584,6 +589,9 @@ textarea {
   .name {
     font-size: 4.5rem;
   }
+  .row {
+    flex-direction: column;
+  }
   .photographer {
     font-size: 4rem;
   }
@@ -620,6 +628,15 @@ textarea {
     min-height: 100vh;
     position: relative;
     background-position: center;
+  }
+  .name__container {
+    padding: 1rem;
+  }
+  .photographer__container {
+    padding: 1rem;
+  }
+  .paragraph__container {
+    padding: 1rem;
   }
   .col {
     display: flex;

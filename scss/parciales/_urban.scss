@@ -24,6 +24,10 @@
   }
 }
 
+.title--container{
+  margin: 80px;
+}
+
 .grid__urban--padre {
   @include grid;
   grid-template-areas:
