@@ -30,6 +30,7 @@
 
 .grid__urban--padre {
   @include grid;
+  
   grid-template-areas:
     "ele1 ele4 ele3 ele3"
     "ele1 ele5 ele5 ele6"
