@@ -85,22 +85,26 @@
     </header>
 
     <main>
-      <section>
+      <section class="section__secundario">
         <div class="title--container">
-          <div class="title__container">
-          <h2 class="title--hijo">Urban</h2>
+          <h2 class="title--hijo" data-aos="fade-right"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine">Urban</h2>
         </div>
 
-        <div class="frase__container">
-          <p class="frase--hijo frase--hijo-1">
+        <div class="frase__container" data-aos="fade-left"
+        data-aos-anchor="#example-anchor"
+        data-aos-offset="500"
+        data-aos-duration="500">
+          <p class="frase--hijo frase--hijo-1" >
             "Quiero despertarme en la ciudad que nunca duerme".
           </p>
           <p class="frase--hijo frase--hijo-2">-Frank Sinatra</p>
         </div>
         </div>
-
+        
         <div class="grid__urban--padre" >
-          <div class="grid_urban--hijo urban__hijo--1" >
+          <div class="grid_urban--hijo urban__hijo--1" data-aos="flip-left">
             <img
               src="../imagenes/urban-vertical.jpg"
               alt=""
@@ -108,7 +112,7 @@
             />
           </div>
 
-          <div class="grid_urban--hijo urban__hijo--2">
+          <div class="grid_urban--hijo urban__hijo--2"  data-aos="flip-right">
             <img
               src="../imagenes/urban-vertical3.jpg"
               alt=""
@@ -116,7 +120,7 @@
             />
           </div>
 
-          <div class="grid_urban--hijo urban__hijo--3">
+          <div class="grid_urban--hijo urban__hijo--3" data-aos="flip-down">
             <img
               src="../imagenes/urban--horizontal2.jpg"
               alt=""
@@ -124,15 +128,15 @@
             />
           </div>
 
-          <div class="grid_urban--hijo urban__hijo--4">
+          <div class="grid_urban--hijo urban__hijo--4" data-aos="flip-left">
             <img src="../imagenes/urban2.jpg" alt="" class="img__urban" />
           </div>
 
           <div class="grid_urban--hijo urban__hijo--5">
-            <img src="../imagenes/urban3.jpg" alt="" class="img__urban" />
+            <img src="../imagenes/urban3.jpg" alt="" class="img__urban"  data-aos="flip-up"/>
           </div>
 
-          <div class="grid_urban--hijo urban__hijo--6">
+          <div class="grid_urban--hijo urban__hijo--6" data-aos="flip-up">
             <img src="../imagenes/urban4.jpg" alt="" class="img__urban" />
           </div>
 
@@ -140,6 +144,7 @@
             id="carouselExampleIndicators"
             class="carousel slide urban__hijo--7"
             data-bs-ride="carousel"
+            data-aos="flip-right"
           >
             <div class="carousel-indicators">
               <button

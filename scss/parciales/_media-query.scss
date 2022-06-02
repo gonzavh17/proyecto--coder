@@ -84,6 +84,10 @@
     padding: 1rem;
   }
 
+  .section--landscape-paragraph{
+    font-size: 1.4rem;
+  }
+
   .col {
     display: flex;
     flex-direction: column;
@@ -157,6 +161,10 @@
       "ele1 ele5"
       "ele7 ele6"
       "ele8 ele6";
+  }
+
+  .section__secundario{
+    margin: 0px 5px 50px 5px;
   }
 
   /* Arquitectura */
