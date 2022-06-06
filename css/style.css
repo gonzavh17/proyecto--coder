@@ -96,17 +96,17 @@
   color: #fff;
 }
 
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
 .body {
   position: relative;
 }
 
 .button-id--container {
   text-align: center;
-}
-
-html, body {
-  width: 100%;
-  overflow-x: hidden;
 }
 
 .colums--1 {
@@ -133,7 +133,7 @@ html, body {
 }
 
 .section--principal {
-  background-image: url(../imagenes/home1.jpg);
+  background-image: url(../imagenes/home1.WebP);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -150,7 +150,7 @@ html, body {
   background-repeat: no-repeat;
   min-height: 100vh;
   background-attachment: fixed;
-  background-image: url(../imagenes/section-landscape.jpg);
+  background-image: url(../imagenes/section-landscape.WebP);
   display: flex;
   flex-direction: row;
 }
@@ -216,7 +216,7 @@ html, body {
 }
 
 .section--urban {
-  background-image: url(../imagenes/section-urban.jpg);
+  background-image: url(../imagenes/section-urban.WebP);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -231,7 +231,7 @@ html, body {
   background-repeat: no-repeat;
   min-height: 100vh;
   background-attachment: fixed;
-  background-image: url(../imagenes/section-arquitectura.jpg);
+  background-image: url(../imagenes/section-arquitectura.WebP);
   display: flex;
 }
 
@@ -303,7 +303,7 @@ html, body {
 }
 
 .body__landscape {
-  background-image: url(../imagenes/landscao-new-background.jpg);
+  background-image: url(../imagenes/landscao-new-background.WebP);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -348,6 +348,11 @@ html, body {
   transition: 500ms;
 }
 
+.grid__landscape--padre .grid__landscape--img:hover {
+  color: #000;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 #000022;
+}
+
 .grid__landscape--padre .hijo--1 {
   grid-area: ele3;
 }
@@ -373,7 +378,7 @@ html, body {
 }
 
 .body__urban {
-  background-image: url(../imagenes/background--urbanb.jpg);
+  background-image: url(../imagenes/urban--background.WebP);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -459,8 +464,13 @@ html, body {
   grid-area: ele3;
 }
 
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
 .body__arquitectura {
-  background-image: url(../imagenes/arquitectura2.jpg);
+  background-image: url(../imagenes/arquitectura2.WebP);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -546,7 +556,7 @@ html, body {
 }
 
 .body__contacto {
-  background-image: url(../imagenes/home1.jpg);
+  background-image: url(../imagenes/home1.WebP);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

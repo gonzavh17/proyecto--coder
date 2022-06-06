@@ -1,3 +1,8 @@
+html, body{
+  width:100%;
+  overflow-x:hidden;
+}
+
 .body {
   position: relative;
 }
@@ -6,10 +11,6 @@
   text-align: center;
 }
 
-html, body{
-width:100%;
-overflow-x:hidden;
-}
 
 .colums--1{
   margin: 3rem;
@@ -35,7 +36,7 @@ overflow-x:hidden;
 }
 
 .section--principal {
-  background-image: url(../imagenes/home1.jpg);
+  background-image: url(../imagenes/home1.WebP);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -48,7 +49,7 @@ overflow-x:hidden;
 
 .section--landscape {
   @include section-background;
-  background-image: url(../imagenes/section-landscape.jpg);
+  background-image: url(../imagenes/section-landscape.WebP);
   display: flex;
   flex-direction: row;
 }
@@ -118,14 +119,14 @@ overflow-x:hidden;
 }
 
 .section--urban {
-  background-image: url(../imagenes/section-urban.jpg);
+  background-image: url(../imagenes/section-urban.WebP);
   @include section-background;
   display: flex;
 }
 
 .section--arquitectura {
   @include section-background;
-  background-image: url(../imagenes/section-arquitectura.jpg);
+  background-image: url(../imagenes/section-arquitectura.WebP);
   display: flex;
 }
 
