@@ -310,6 +310,10 @@ html, body {
   background-attachment: fixed;
 }
 
+.body__landscape .title__container {
+  margin: 60px 0 40px 0;
+}
+
 .body__landscape .title--hijo {
   text-align: center;
   padding: 20px;
@@ -355,6 +359,10 @@ html, body {
 
 .grid__landscape--padre .hijo--1 {
   grid-area: ele3;
+}
+
+.grid__landscape--padre .hijo--2 {
+  grid-area: ele2;
 }
 
 .grid__landscape--padre .hijo--3 {
@@ -710,13 +718,10 @@ textarea {
     display: none;
   }
   /* Landscape */
-  .body__landscape {
-    background-position: center;
-  }
   .grid__landscape--padre {
     margin: 0;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: "ele1 ele1" "ele2 ele3" "ele8 ele3" "ele4 ele5" "ele6 ele6" "ele6 ele6";
+    grid-template-areas: "ele1 ele1" "ele2 ele2" "ele3 ele3" "ele4 ele4" "ele6 ele6" "ele5 ele5" "ele8 ele8";
   }
   /* Urban */
   .body__urban {
@@ -725,7 +730,7 @@ textarea {
   .grid__urban--padre {
     margin: 0;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: "ele3 ele3 " "ele1 ele4" "ele1 ele5" "ele7 ele6" "ele8 ele6";
+    grid-template-areas: "ele3 ele3 " "ele1 ele1" "ele5 ele5" "ele6 ele6" "ele8 ele8" "ele7 ele7" "ele4 ele4";
   }
   .section__secundario {
     margin: 0px 5px 50px 5px;
@@ -737,7 +742,7 @@ textarea {
   .grid__arquitectura--padre {
     margin: 0;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: "ele1 ele1" "ele4 ele2" "ele4 ele2" "ele5 ele2" "ele3 ele2" "ele3 ele6" "ele7 ele7";
+    grid-template-areas: "ele1 ele1" "ele2 ele2" "ele4 ele4" "ele5 ele5" "ele3 ele3" "ele6 ele6" "ele7 ele7";
   }
   /* Contacto */
   .form__container {

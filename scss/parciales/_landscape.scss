@@ -1,6 +1,10 @@
 .body__landscape {
   background-image: url(../imagenes/landscao-new-background.WebP);
   @include background;
+  
+  .title__container{
+    margin: 60px 0 40px 0;
+  }
 
   .title--hijo {
     text-align: center;
@@ -44,6 +48,10 @@
 
   .hijo--1 {
     grid-area: ele3;
+  }
+
+  .hijo--2{
+    grid-area: ele2;
   }
 
   .hijo--3 {
