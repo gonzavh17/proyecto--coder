@@ -1,73 +1,73 @@
 // footer para el index y contacto
-
-.footer__container {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-
-  .nav {
+// .footer__container {
+//     .nav {
+//         background-color: rgba(0, 0, 0, 0.8);
+//         border-top: 1px solid $color-a;
+//         .nav-item {
+//             a {
+//                 color: $color-a;
+//             }
+//             span {
+//                 color: $color-a;
+//             }
+//             .footer__a {
+//                 display: inline-block !important;
+//                 transition: 0.5s;
+//             }
+//             .footer__a:hover {
+//                 color: #fff !important;
+//             }
+//             .footer__icons {
+//                 transition: 0.5s;
+//             }
+//             .footer__icons:hover {
+//                 color: #fff;
+//             }
+//         }
+//     }
+// }
+.footer__container--nombre {
     background-color: rgba(0, 0, 0, 0.8);
-    border-top: 1px solid $color-a;
-
-    .nav-item {
-      a {
-        color: $color-a;
-      }
-      span {
-        color: $color-a;
-      }
-
-      .footer__a {
-        display: inline-block !important;
+    text-align: center;
+    padding-bottom: 5px;
+    .footer__a {
+        display: inline-block;
         transition: 0.5s;
-      }
-
-      .footer__a:hover {
-        color: #fff !important;
-      }
-
-      .footer__icons {
-        transition: 0.5s;
-      }
-
-      .footer__icons:hover {
-        color: #fff;
-      }
+        color: $color-a;
+        text-decoration: none;
     }
-  }
+    .footer__a:hover {
+        color: #fff;
+    }
 }
 
 // footer para landscape, urban y arquitectura
-
 .footer {
-  .nav {
     background-color: rgba(0, 0, 0, 0.8);
     border-top: 1px solid $color-a;
-
-    .nav-item {
-      a {
-        color: $color-a;
-      }
-      span {
-        color: $color-a;
-      }
-
-      .footer__a {
-        display: inline-block !important;
-        transition: 0.5s;
-      }
-
-      .footer__a:hover {
-        color: #fff !important;
-      }
-
-      .footer__icons {
-        transition: 0.5s;
-      }
-
-      .footer__icons:hover {
-        color: #fff;
-      }
+    .nav {
+        background-color: rgba(0, 0, 0, 0.8);
+        border-top: 1px solid $color-a;
+        .nav-item {
+            a {
+                color: $color-a;
+            }
+            span {
+                color: $color-a;
+            }
+            .footer__a {
+                display: inline-block !important;
+                transition: 0.5s;
+            }
+            .footer__a:hover {
+                color: #fff !important;
+            }
+            .footer__icons {
+                transition: 0.5s;
+            }
+            .footer__icons:hover {
+                color: #fff;
+            }
+        }
     }
-  }
 }

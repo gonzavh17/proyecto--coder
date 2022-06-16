@@ -30,40 +30,26 @@
   padding-right: 10px;
 }
 
-.footer__container {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
+.footer__container--nombre {
+  background-color: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  padding-bottom: 5px;
 }
 
-.footer__container .nav {
+.footer__container--nombre .footer__a {
+  display: inline-block;
+  transition: 0.5s;
+  color: #c69b7b;
+  text-decoration: none;
+}
+
+.footer__container--nombre .footer__a:hover {
+  color: #fff;
+}
+
+.footer {
   background-color: rgba(0, 0, 0, 0.8);
   border-top: 1px solid #c69b7b;
-}
-
-.footer__container .nav .nav-item a {
-  color: #c69b7b;
-}
-
-.footer__container .nav .nav-item span {
-  color: #c69b7b;
-}
-
-.footer__container .nav .nav-item .footer__a {
-  display: inline-block !important;
-  transition: 0.5s;
-}
-
-.footer__container .nav .nav-item .footer__a:hover {
-  color: #fff !important;
-}
-
-.footer__container .nav .nav-item .footer__icons {
-  transition: 0.5s;
-}
-
-.footer__container .nav .nav-item .footer__icons:hover {
-  color: #fff;
 }
 
 .footer .nav {
@@ -96,7 +82,8 @@
   color: #fff;
 }
 
-html, body {
+html,
+body {
   width: 100%;
   overflow-x: hidden;
 }
@@ -340,8 +327,8 @@ html, body {
   grid-template-columns: repeat(4, 1fr);
   gap: 10px;
   grid-auto-rows: 450px;
-  margin: 100px 20px 60px 20px;
-  grid-template-areas: "ele1 ele1 ele2 ele3" "ele4 ele8 ele5 ele3" "ele4 ele6 ele6 ele6";
+  margin: 16px 20px 60px 20px;
+  grid-template-areas: "ele1 ele1 ele2 ele3" "ele4 ele8 ele5 ele3" "ele4 ele6 ele6 ele6";
 }
 
 .grid__landscape--padre .grid__landscape--img {
@@ -383,6 +370,11 @@ html, body {
 
 .grid__landscape--padre .hijo--7 {
   grid-area: ele1;
+}
+
+.carousel-inner {
+  width: 100%;
+  height: 100%;
 }
 
 .body__urban {
@@ -427,8 +419,8 @@ html, body {
   grid-template-columns: repeat(4, 1fr);
   gap: 10px;
   grid-auto-rows: 450px;
-  margin: 100px 20px 60px 20px;
-  grid-template-areas: "ele1 ele4 ele3 ele3" "ele1 ele5 ele5 ele6" "ele7 ele7 ele8 ele6";
+  margin: 16px 20px 60px 20px;
+  grid-template-areas: "ele1 ele4 ele3 ele3" "ele1 ele5 ele5 ele6" "ele7 ele7 ele8 ele6";
 }
 
 .grid__urban--padre .img__urban {
@@ -442,6 +434,10 @@ html, body {
 .grid__urban--padre .img__urban:hover {
   color: #000;
   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 #000022;
+}
+
+.grid__urban--padre .urban__hijo--0 {
+  grid-area: ele0;
 }
 
 .grid__urban--padre .urban__hijo--1 {
@@ -472,7 +468,17 @@ html, body {
   grid-area: ele3;
 }
 
-html, body {
+.carousel-inner img {
+  width: 100%;
+  height: 100%;
+}
+
+.carousel {
+  height: 70vh;
+}
+
+html,
+body {
   width: 100%;
   overflow-x: hidden;
 }
@@ -518,8 +524,8 @@ html, body {
   grid-template-columns: repeat(4, 1fr);
   gap: 10px;
   grid-auto-rows: 450px;
-  margin: 100px 20px 60px 20px;
-  grid-template-areas: "ele1 ele1 ele6 ele2" "ele3 ele5 ele4 ele2" "ele3 ele5 ele7 ele7";
+  margin: 16px 20px 60px 20px;
+  grid-template-areas: "ele1 ele1 ele6 ele2" "ele3 ele5 ele4 ele2" "ele3 ele5 ele7 ele7";
 }
 
 .grid__arquitectura--padre .grid__img {
@@ -563,21 +569,17 @@ html, body {
   grid-area: ele7;
 }
 
-.body__contacto {
+.section__contacto {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
   background-image: url(../imagenes/home1.WebP);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  position: relative;
   min-height: 100vh;
-  padding-bottom: 100px;
-}
-
-.section__contacto {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
+  padding-bottom: 3rem;
 }
 
 .form__container {
@@ -650,19 +652,23 @@ textarea {
   .grid__landscape--padre {
     margin: 0;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: "ele1 ele1 ele3" "ele4 ele2 ele3" "ele4 ele5 ele5" "ele6 ele6 ele8" "ele6 ele6 ele8";
+    grid-template-areas: "ele1 ele1 ele3" "ele4 ele2 ele3" "ele4 ele5 ele5" "ele6 ele6 ele8" "ele6 ele6 ele8";
   }
   /* Urban */
   .grid__urban--padre {
+    padding-top: 1rem;
     margin: 0;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: "ele1 ele3 ele3" "ele1 ele8 ele4" "ele1 ele8 ele6" "ele7 ele7 ele6" "ele5 ele5 ele5";
+    grid-template-areas: "ele1 ele3 ele3" "ele1 ele8 ele4" "ele1 ele8 ele6" "ele7 ele7 ele6" "ele5 ele5 ele5";
+  }
+  .carousel {
+    height: auto;
   }
   /* Arquitectura */
   .grid__arquitectura--padre {
     margin: 0;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: "ele1 ele1 ele6" "ele4 ele5 ele2" "ele4 ele5 ele2" "ele3 ele7 ele7" "ele3 ele7 ele7";
+    grid-template-areas: "ele1 ele1 ele6" "ele4 ele5 ele2" "ele4 ele5 ele2" "ele3 ele7 ele7" "ele3 ele7 ele7";
   }
 }
 
@@ -721,7 +727,7 @@ textarea {
   .grid__landscape--padre {
     margin: 0;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: "ele1 ele1" "ele2 ele2" "ele3 ele3" "ele4 ele4" "ele6 ele6" "ele5 ele5" "ele8 ele8";
+    grid-template-areas: "ele1 ele1" "ele2 ele2" "ele3 ele3" "ele4 ele4" "ele6 ele6" "ele5 ele5" "ele8 ele8";
   }
   /* Urban */
   .body__urban {
@@ -729,11 +735,15 @@ textarea {
   }
   .grid__urban--padre {
     margin: 0;
+    padding-top: 1rem;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: "ele3 ele3 " "ele1 ele1" "ele5 ele5" "ele6 ele6" "ele8 ele8" "ele7 ele7" "ele4 ele4";
+    grid-template-areas: "ele3 ele3 " "ele1 ele1" "ele5 ele5" "ele6 ele6" "ele8 ele8" "ele7 ele7" "ele4 ele4";
   }
   .section__secundario {
     margin: 0px 5px 50px 5px;
+  }
+  .carousel {
+    height: auto;
   }
   /* Arquitectura */
   .body__arquitectura {
@@ -742,7 +752,7 @@ textarea {
   .grid__arquitectura--padre {
     margin: 0;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: "ele1 ele1" "ele2 ele2" "ele4 ele4" "ele5 ele5" "ele3 ele3" "ele6 ele6" "ele7 ele7";
+    grid-template-areas: "ele1 ele1" "ele2 ele2" "ele4 ele4" "ele5 ele5" "ele3 ele3" "ele6 ele6" "ele7 ele7";
   }
   /* Contacto */
   .form__container {

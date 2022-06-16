@@ -1,205 +1,139 @@
 @media screen and (max-width: 1023px) {
-  /* Index */
-
-  .name {
-    font-size: 4.5rem;
-  }
-
-  .row {
-    flex-direction: column;
-  }
-
-  .photographer {
-    font-size: 4rem;
-  }
-
-  .paragraph {
-    font-size: 3.5rem;
-  }
-
-  .section--landscape-title {
-    font-size: 3rem;
-  }
-
-  /* Landscape */
-
-  .grid__landscape--padre {
-    margin: 0;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-areas:
-      "ele1 ele1 ele3"
-      "ele4 ele2 ele3"
-      "ele4 ele5 ele5"
-      "ele6 ele6 ele8"
-      "ele6 ele6 ele8";
-  }
-
-  /* Urban */
-
-  .grid__urban--padre {
-    margin: 0;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-areas:
-      "ele1 ele3 ele3"
-      "ele1 ele8 ele4"
-      "ele1 ele8 ele6"
-      "ele7 ele7 ele6"
-      "ele5 ele5 ele5";
-  }
-
-  /* Arquitectura */
-
-  .grid__arquitectura--padre {
-    margin: 0;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-areas:
-      "ele1 ele1 ele6"
-      "ele4 ele5 ele2"
-      "ele4 ele5 ele2"
-      "ele3 ele7 ele7"
-      "ele3 ele7 ele7";
-  }
+    /* Index */
+    .name {
+        font-size: 4.5rem;
+    }
+    .row {
+        flex-direction: column;
+    }
+    .photographer {
+        font-size: 4rem;
+    }
+    .paragraph {
+        font-size: 3.5rem;
+    }
+    .section--landscape-title {
+        font-size: 3rem;
+    }
+    /* Landscape */
+    .grid__landscape--padre {
+        margin: 0;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: "ele1 ele1 ele3" "ele4 ele2 ele3" "ele4 ele5 ele5" "ele6 ele6 ele8" "ele6 ele6 ele8";
+    }
+    /* Urban */
+    .grid__urban--padre {
+        padding-top: 1rem;
+        margin: 0;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: "ele1 ele3 ele3" "ele1 ele8 ele4" "ele1 ele8 ele6" "ele7 ele7 ele6" "ele5 ele5 ele5";
+    }
+    .carousel {
+        height: auto;
+    }
+    /* Arquitectura */
+    .grid__arquitectura--padre {
+        margin: 0;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: "ele1 ele1 ele6" "ele4 ele5 ele2" "ele4 ele5 ele2" "ele3 ele7 ele7" "ele3 ele7 ele7";
+    }
 }
 
 @media screen and (max-width: 600px) {
-  /* Footer */
-
-  /* Index */
-
-  .body {
-    min-height: 100vh;
-    position: relative;
-    background-position: center;
-  }
-
-  .name__container {
-    padding: 1rem;
-  }
-
-  .photographer__container {
-    padding: 1rem;
-  }
-
-  .paragraph__container {
-    padding: 1rem;
-  }
-
-  .section--landscape-paragraph{
-    font-size: 1.4rem;
-  }
-
-  .col {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .colums--1 {
-    margin: 0;
-  }
-
-  .footer__container {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-  }
-
-  .logotipo__container {
-    display: none;
-  }
-
-  .section {
-    height: 100vh;
-  }
-
-  .name {
-    font-size: 3rem;
-  }
-
-  .photographer {
-    font-size: 2.5rem;
-  }
-
-  .paragraph {
-    font-size: 1.5rem;
-  }
-
-  .section__landscape--container--hijo--responsive {
-    display: none;
-  }
-
-  /* Landscape */
-
-  .grid__landscape--padre {
-    margin: 0;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas:
-      "ele1 ele1"
-      "ele2 ele2"
-      "ele3 ele3"
-      "ele4 ele4"
-      "ele6 ele6"
-      "ele5 ele5"
-      "ele8 ele8";
-  }
-
-  /* Urban */
-
-  .body__urban {
-    background-position: center;
-  }
-
-  .grid__urban--padre {
-    margin: 0;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas:
-      "ele3 ele3 "
-      "ele1 ele1"
-      "ele5 ele5"
-      "ele6 ele6"
-      "ele8 ele8"
-      "ele7 ele7"
-      "ele4 ele4";
-  }
-
-  .section__secundario{
-    margin: 0px 5px 50px 5px;
-  }
-
-  /* Arquitectura */
-
-  .body__arquitectura {
-    background-position: center;
-  }
-
-  .grid__arquitectura--padre {
-    margin: 0;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas:
-      "ele1 ele1"
-      "ele2 ele2"
-      "ele4 ele4"
-      "ele5 ele5"
-      "ele3 ele3"
-      "ele6 ele6"
-      "ele7 ele7";
-  }
-
-  /* Contacto */
-
-  .form__container {
-    width: 100%;
-    margin: 10rem 2rem 0 2rem;
-  }
-
-  textarea {
-    min-height: auto;
-    max-height: auto;
-    max-width: auto;
-    min-width: auto;
-  }
+    /* Footer */
+    /* Index */
+    .body {
+        min-height: 100vh;
+        position: relative;
+        background-position: center;
+    }
+    .name__container {
+        padding: 1rem;
+    }
+    .photographer__container {
+        padding: 1rem;
+    }
+    .paragraph__container {
+        padding: 1rem;
+    }
+    .section--landscape-paragraph {
+        font-size: 1.4rem;
+    }
+    .col {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .colums--1 {
+        margin: 0;
+    }
+    .footer__container {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+    .logotipo__container {
+        display: none;
+    }
+    .section {
+        height: 100vh;
+    }
+    .name {
+        font-size: 3rem;
+    }
+    .photographer {
+        font-size: 2.5rem;
+    }
+    .paragraph {
+        font-size: 1.5rem;
+    }
+    .section__landscape--container--hijo--responsive {
+        display: none;
+    }
+    /* Landscape */
+    .grid__landscape--padre {
+        margin: 0;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: "ele1 ele1" "ele2 ele2" "ele3 ele3" "ele4 ele4" "ele6 ele6" "ele5 ele5" "ele8 ele8";
+    }
+    /* Urban */
+    .body__urban {
+        background-position: center;
+    }
+    .grid__urban--padre {
+        margin: 0;
+        padding-top: 1rem;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: "ele3 ele3 " "ele1 ele1" "ele5 ele5" "ele6 ele6" "ele8 ele8" "ele7 ele7" "ele4 ele4";
+    }
+    .section__secundario {
+        margin: 0px 5px 50px 5px;
+    }
+    .carousel {
+        height: auto;
+    }
+    /* Arquitectura */
+    .body__arquitectura {
+        background-position: center;
+    }
+    .grid__arquitectura--padre {
+        margin: 0;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: "ele1 ele1" "ele2 ele2" "ele4 ele4" "ele5 ele5" "ele3 ele3" "ele6 ele6" "ele7 ele7";
+    }
+    /* Contacto */
+    .form__container {
+        width: 100%;
+        margin: 10rem 2rem 0 2rem;
+    }
+    textarea {
+        min-height: auto;
+        max-height: auto;
+        max-width: auto;
+        min-width: auto;
+    }
 }
 
 .icons {
-  text-decoration: none;
+    text-decoration: none;
 }

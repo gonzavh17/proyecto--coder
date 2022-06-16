@@ -1,62 +1,62 @@
-.body__contacto {
-  background-image: url(../imagenes/home1.WebP);
-  @include background;
-  position: relative;
-  min-height: 100vh;
-  padding-bottom: 100px;
-}
-
+// .body__contacto {}
 .section__contacto {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    background-image: url(../imagenes/home1.WebP);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    padding-bottom: 3rem;
 }
 
 .form__container {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: space-around;
-  align-items: center;
-  border-left: 2px solid #78938a;
-  border-top: 2px solid #78938a;
-  border-radius: 10px;
-  background-color: #f1ddbf;
-  opacity: 0.8;
-  width: 500px;
-  height: 500px;
-  margin: 10rem;
-  padding: 30px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+    border-left: 2px solid #78938a;
+    border-top: 2px solid #78938a;
+    border-radius: 10px;
+    background-color: #f1ddbf;
+    opacity: 0.8;
+    width: 500px;
+    height: 500px;
+    margin: 10rem;
+    padding: 30px;
 }
 
 .title--form {
-  font-size: 40px;
-  margin-bottom: 10px;
+    font-size: 40px;
+    margin-bottom: 10px;
 }
 
 .input,
 textarea {
-  width: 100%;
-  margin-bottom: 20px;
-  padding: 5px;
-  border: none;
-  border-bottom:map-get($estilos, border);
-  border-radius: 10px;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 5px;
+    border: none;
+    border-bottom: map-get($estilos, border);
+    border-radius: 10px;
 }
 
 .button {
-  background-color: map-get($estilos, background) ;
-  border:map-get($estilos, color) 3px solid;
-  border-radius: 10px;
-  color: map-get($estilos, color) !important;
+    background-color: map-get($estilos, background);
+    border: map-get($estilos, color) 3px solid;
+    border-radius: 10px;
+    color: map-get($estilos, color) !important;
 }
 
 .btn-primary:target {
-  border-color: #fff !important;
+    border-color: #fff !important;
 }
 
 textarea {
-  min-height: 100px;
-  max-height: 200px;
-  max-width: 490px;
-  min-width: 490px;
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 490px;
+    min-width: 490px;
 }
