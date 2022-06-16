@@ -18,6 +18,7 @@
     /* Landscape */
     .grid__landscape--padre {
         margin: 0;
+        padding-top: 12px;
         grid-template-columns: repeat(3, 1fr);
         grid-template-areas: "ele1 ele1 ele3" "ele4 ele2 ele3" "ele4 ele5 ele5" "ele6 ele6 ele8" "ele6 ele6 ele8";
     }
@@ -94,6 +95,7 @@
     .grid__landscape--padre {
         margin: 0;
         grid-template-columns: repeat(2, 1fr);
+        padding-top: 12px;
         grid-template-areas: "ele1 ele1" "ele2 ele2" "ele3 ele3" "ele4 ele4" "ele6 ele6" "ele5 ele5" "ele8 ele8";
     }
     /* Urban */
