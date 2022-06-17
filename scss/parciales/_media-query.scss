@@ -34,6 +34,7 @@
     }
     /* Arquitectura */
     .grid__arquitectura--padre {
+        padding-top: 1rem;
         margin: 0;
         grid-template-columns: repeat(3, 1fr);
         grid-template-areas: "ele1 ele1 ele6" "ele4 ele5 ele2" "ele4 ele5 ele2" "ele3 ele7 ele7" "ele3 ele7 ele7";
@@ -67,11 +68,6 @@
     }
     .colums--1 {
         margin: 0;
-    }
-    .footer__container {
-        position: absolute;
-        bottom: 0;
-        width: 100%;
     }
     .logotipo__container {
         display: none;
@@ -119,6 +115,7 @@
         background-position: center;
     }
     .grid__arquitectura--padre {
+        padding-top: 1rem;
         margin: 0;
         grid-template-columns: repeat(2, 1fr);
         grid-template-areas: "ele1 ele1" "ele2 ele2" "ele4 ele4" "ele5 ele5" "ele3 ele3" "ele6 ele6" "ele7 ele7";
